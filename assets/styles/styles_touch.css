@@ -1,0 +1,401 @@
+/* pads */
+@media screen and (max-width: 1024px) {
+
+}
+
+/* pads-portrait */
+@media screen and (max-width: 1024px) and (min-width: 600px) and (orientation: portrait) {
+  :root {
+    --main-page-height: 80vh;
+    --top-background-height: 110vh;
+    --second-page-height: 80vh;
+    --second-background-height: 100vh;
+    --third-page-height: 70vh;
+    --third-page-water-height: 150px;
+    --last-page-height: 90vh;
+    --footer-height: 60vh;
+
+    --text-size: 22px;
+    --eye-size: 70px;
+  }
+
+  /* скрыть элемент на падах */
+  .hidden_pad_portrait {
+    display: none;
+  }
+
+  .hand-container {
+    top: 32%;
+    left: -10%;
+    right: 5%;
+    transform: scale(1, 1.2);
+  }
+
+  .page_main .page__text_bottom {
+    bottom: 0%;
+  }
+
+  .page_second .hand-container {
+    top: -5%;
+    left: -5%;
+    right: -10%;
+    transform: scale(1, 1.3);
+  }
+  .page_second .eyes-container {
+    top: 25%;
+    bottom: -5%;
+  }
+
+  .page_second .page__text_top {
+    top: 45%;
+  }
+
+  .page_second .page__text_bottom {
+    bottom: -8%;
+  }
+
+  .tentacle-container {
+    top: 20%;
+  }
+  .tentacle-image_left {
+    left: -10%;
+  }
+  .tentacle-image_right {
+    right: -10%;
+  }
+
+  .smile-image {
+    width: 40%;
+  }
+  .smile-image_big {
+    left: -17%;
+  }
+  .smile-image_1 {
+    bottom: 4%;
+    right: 37%;
+  }
+  .smile-image_2 {
+    top: 47%;
+  }
+  .smile-image_3 {
+    right: -14%;
+    bottom: 7%;
+  }
+  .smile-image_4 {
+    top: 16%;
+    right: 2%;
+  }
+
+  .bubble.bubble_4 {
+    top: 40%;
+    bottom: auto;
+  }
+  .bubble.bubble_5 {
+      left: 63%;
+  }
+  .bubble.bubble_7 {
+    bottom: 30%;
+    left: auto;
+    right: 10%;
+  }
+}
+
+/* pads-landscape */
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  :root {
+    --footer-height: 80vh;
+  }
+
+  .hidden_pad_landscape {
+    display: none;
+  }
+
+  .hand-container {
+    top: 28%;
+    left: -15%;
+    right: -10%;
+  }
+
+  .page_second .page__text_top {
+    top: 38%;
+  }
+
+  .page_second .hand-container {
+    top: -10%;
+    left: -20%;
+    right: -20%;
+  }
+
+  .smile-image_big {
+    left: -17%;
+  }
+
+  .smile-image_2 {
+    top: 50%;
+    right: 15%;
+    transform: rotate(-15deg) scale(1.2);
+  }
+
+  .smile-image_3 {
+    right: 2%;
+  }
+
+  .smile-image_4 {
+    right: 10%;
+  }
+
+  .tentacle-image_left {
+    left: -20%;
+  }
+  .tentacle-image_right {
+    right: -20%;
+  }
+}
+
+/* phones 6,7,8 plus, xs max */
+@media screen and (max-width: 500px) {
+  :root {
+    --main-page-height: 552px;
+    --top-background-height: 736px;
+    --second-page-height: 535px;
+    --second-background-height: 655px;
+    --third-page-height: 370px;
+    --third-page-water-height: 130px;
+    --last-page-height: 480px;
+    --footer-height: 270px;
+
+    --eye-size: 42px;
+    --text-size: 16px;
+    --bubble-size: 48px;
+  }
+
+  /* скрыть элемент на телефонах */
+  .hidden_phone_500 {
+    display: none;
+  }
+
+  .hand-container {
+    top: 28%;
+    left: -40%;
+    right: -10%;
+    transform: scale(1);
+  }
+
+  .hand-image {
+    min-width: 563px;
+  }
+
+  .eyes-container {
+    top: 100px;
+    bottom: 5%;
+  }
+
+  .page_main .eye {
+    width: calc(var(--eye-size) / 1.5 * 1.6);
+    height: calc(var(--eye-size) / 1.5 * .8);
+  }
+  .page_main .eye::before {
+    height: calc(var(--eye-size) / 4);
+    width: calc(var(--eye-size) / 3 * 1.3);
+  }
+
+  .bubbles-container {
+    top: 20%;
+    bottom: -5%;
+  }
+
+  .bubble {
+    border-width: 4px;
+  }
+
+  .page_main .page__text_bottom {
+    bottom: 2%;
+  }
+
+  .page_second .hand-container {
+    top: -10%;
+    left: -20%;
+    right: -30%;
+  }
+  .page_second .page__text_top {
+    top: 39%;
+  }
+  .page_second .page__text_bottom {
+    bottom: -5%;
+  }
+
+  .page_second .eye_7 {
+    left: 12%;
+  }
+
+  .tentacle-container {
+    top: 0
+  }
+
+  .tentacle-image_left {
+    left: -25%;
+    transform: scale(-1, 1);
+  }
+  .tentacle-image_right {
+    right: -25%;
+    transform: scale(1, 1);
+  }
+
+  .smile-container {
+    top: 10%;
+    bottom: 12%;
+  }
+
+  .smile-image {
+    width: 30%;
+  }
+
+  .smile-image_big {
+    left: 1%;
+  }
+
+  .smile-image_1 {
+    bottom: 4%;
+    right: 37%;
+  }
+
+  .smile-image_3 {
+    right: 2%;
+    bottom: -10%;
+  }
+
+  .smile-image_4 {
+    right: 2%;
+  }
+
+  .page_last .page__text_top {
+    top: 30%;
+  }
+
+  .background-last {
+    background-size: 150% 100%;
+    background-position-x: 50%;
+  }
+
+  .footer_logo {
+    width: 70px;
+  }
+
+  .footer__text_poem {
+    margin-bottom: 40px;
+  }
+}
+/* iphone 6,7,8 */
+@media screen and (max-width: 375px) {
+  :root {
+    /* --page-height: 75vh; */
+    /* --main-page-height: 75vh; */
+    /* --top-background-height: 95vh; */
+    /* --second-page-height: 80vh; */
+    /* --third-page-height: 40vh;
+    --third-page-water-height: 110px;
+
+    --text-size: 14px; */
+  }
+
+  .hidden_phone_375 {
+    display: none;
+  }
+
+  .page_main .page__text_bottom {
+    bottom: 5%;
+  }
+
+  .page_second .hand-container {
+    transform: scale(1.2);
+  }
+
+  .page_second .page__text_top {
+    top: 36%;
+  }
+
+  /* .page_second .page__text_bottom {
+    bottom: -1%;
+  }
+
+  .page_second .eyes-container {
+    bottom: 2%;
+  } */
+
+  .page_second .eye_5 {
+    bottom: 22%;
+    left: 53%;
+  }
+
+  .page_second .eye_12 {
+    top: 46%;
+  }
+
+  .tentacle-container {
+    top: 0;
+  }
+
+  .tentacle-image_left {
+    left: -30%;
+    transform: scale(-1, 1);
+  }
+  .tentacle-image_right {
+    right: -30%;
+    transform: scale(1, 1);
+  }
+
+  .page_last .page__text_top {
+    top: 30%;
+  }
+
+  .footer__text_poem {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* iphone xs, совсем узкие экраны */
+@media screen and (max-width: 375px) and (min-height: 800px) {
+  :root {
+    /* --second-page-height: 60vh; */
+  }
+}
+
+/* se */
+@media screen and (max-width: 320px) {
+  :root {
+    --third-page-water-height: 100px;
+
+    --text-size: 14px;
+  }
+
+  .hidden_phone_320 {
+    display: none;
+  }
+
+  header {
+    top: 30px;
+  }
+
+  .page_main .page__text_top {
+    top: 35%;
+  }
+
+  .hand-image {
+    max-width: auto;
+    min-width: auto;
+  }
+
+  .page_second .hand-container {
+    top: -2%;
+  }
+
+  .tentacle-image_left {
+    left: -33%;
+    transform: scale(-.7, 1);
+  }
+  .tentacle-image_right {
+    right: -33%;
+    transform: scale(.7, 1);
+  }
+}
