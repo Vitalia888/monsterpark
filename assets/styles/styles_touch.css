@@ -76,6 +76,7 @@
   }
   .smile-image_2 {
     top: 47%;
+    transform: rotate(-15deg) scale(1.1);
   }
   .smile-image_3 {
     right: -14%;
@@ -133,7 +134,7 @@
   .smile-image_2 {
     top: 50%;
     right: 15%;
-    transform: rotate(-15deg) scale(1.2);
+    transform: rotate(-15deg) scale(1.1);
   }
 
   .smile-image_3 {
@@ -208,6 +209,36 @@
     border-width: 4px;
   }
 
+  .bubble.bubble_1 {
+      left: 10%;
+  }
+
+  .bubble.bubble_2 {
+    top: 8%;
+    left: 2%;
+  }
+
+  .bubble.bubble_3 {
+    top: 32%;
+    left: 2%;
+  }
+
+  .bubble.bubble_4 {
+    bottom: 38%;
+    left: 40%;
+  }
+
+  .bubble.bubble_7 {
+    bottom: 26%;
+  }
+
+  .bubble.bubble_9 {
+    right: -3%;
+  }
+  .bubble.bubble_12 {
+    right: 1%;
+  }
+
   .page_main .page__text_bottom {
     bottom: 2%;
   }
@@ -225,8 +256,13 @@
   }
 
   .page_second .eye_7 {
-    left: 12%;
+    left: 7%;
+    bottom: -12%;
   }
+  .page_second .eye_9 {
+    bottom: -19%;
+    right: 10%;
+}
 
   .tentacle-container {
     top: 0
@@ -255,8 +291,8 @@
   }
 
   .smile-image_1 {
-    bottom: 4%;
-    right: 37%;
+    bottom: -1%;
+    right: 45%;
   }
 
   .smile-image_3 {
@@ -314,13 +350,15 @@
     top: 36%;
   }
 
-  /* .page_second .page__text_bottom {
-    bottom: -1%;
+  .page_second .eye_2 {
+      top: 10%;
+      left: 10%;
   }
-
-  .page_second .eyes-container {
-    bottom: 2%;
-  } */
+  
+  .page_second .eye_4 {
+    top: 110%;
+    left: 5%;
+  }
 
   .page_second .eye_5 {
     bottom: 22%;
@@ -328,7 +366,8 @@
   }
 
   .page_second .eye_12 {
-    top: 46%;
+    top: 56%;
+    right: 10%;
   }
 
   .tentacle-container {
@@ -358,6 +397,9 @@
 @media screen and (max-width: 375px) and (min-height: 800px) {
   :root {
     /* --second-page-height: 60vh; */
+  }
+  .header-image {
+    top: 30%;
   }
 }
 
@@ -390,6 +432,16 @@
     top: -2%;
   }
 
+  .page_second .eye_5 {
+      bottom: 18%;
+      left: 48%;
+  }
+
+  .page_second .eye_12 {
+    top: 50%;
+    right: 10%;
+}
+
   .tentacle-image_left {
     left: -33%;
     transform: scale(-.7, 1);
@@ -398,4 +450,38 @@
     right: -33%;
     transform: scale(.7, 1);
   }
+
+  .bubble.bubble_1 {
+    left: 22%;
+    top: 35%;
+}
+
+.bubble.bubble_3 {
+    top: 26%;
+    left: 2%;
+}
+
+.bubble.bubble_7 {
+    bottom: 34%;
+    left: 62%;
+}
+
+.bubble.bubble_8 {
+    bottom: 27%;
+    right: 4%;
+  }
+
+.bubble.bubble_12 {
+    top: 1%;
+  }
+
+  .smile-image_big {
+    bottom: -6%;
+}
+
+.smile-image_3 {
+    right: -5%;
+    bottom: -13%;
+}
+
 }

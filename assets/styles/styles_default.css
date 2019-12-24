@@ -78,7 +78,7 @@ main {
 }
 
 .page_main .page__text_bottom {
-  bottom: -3%;
+  bottom: -5%;
 }
 
 .hand-container {
@@ -114,7 +114,7 @@ main {
   z-index: 1;
 }
 .page_second .page__text_top {
-  top: 30%;
+  top: 32%;
 }
 .page_second .page__text_bottom {
   bottom: 10%;
@@ -515,6 +515,11 @@ footer {
   top: 25%;
   animation: eye_circle_back 4s linear infinite;
 }
+.eye-animation_circle_slow::before {
+  left: 25%;
+  top: 25%;
+  animation: eye_circle_slow 8s linear infinite;
+}
 
 .eye-animation_line::before {
   left: 25%;
@@ -524,8 +529,29 @@ footer {
 .eye-animation_line_back::before {
   left: 25%;
   top: 50%;
-  animation: eye_line_back 2s ease-out infinite;
+  animation: eye_line_back 3s ease-out infinite;
 }
+.eye-animation_line2::before {
+  left: 30%;
+  top: 50%;
+  animation: eye_line2 3s ease-out infinite;
+}
+.eye-animation_line2_slow::before {
+  left: 30%;
+  top: 50%;
+  animation: eye_line2_slow 5s ease-out infinite;
+}
+.eye-animation_line3::before {
+  left: 30%;
+  top: 50%;
+  animation: eye_line3 5s ease-out infinite;
+}
+.eye-animation_line4::before {
+  left: 30%;
+  top: 50%;
+  animation: eye_line4 3s ease-out infinite;
+}
+
 
 @keyframes eye_circle {
   from {
@@ -535,6 +561,7 @@ footer {
     transform: rotate(360deg) translateX(-40%) rotate(-360deg);
   }
 }
+
 @keyframes eye_circle_back {
   from {
     transform: rotate(0deg) translateX(-40%) rotate(0deg);
@@ -542,19 +569,72 @@ footer {
   to {
     transform: rotate(-360deg) translateX(-40%) rotate(360deg);
   }
-}
 
-@keyframes eye_line {
+}
+@keyframes eye_circle_slow {
+  from {
+    transform: rotate(0deg) translateX(-40%) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(-40%) rotate(-360deg);
+  }
+
+}
+@keyframes eye_line2 {
   0, 100% {
     transform: translateX(0) translateY(-50%);
   }
   50% {
+    transform: translateX(100%) translateY(-50%);
+  }
+  80% {
+    transform: translateX(0) translateY(-50%);
+  }
+
+}
+@keyframes eye_line2_slow {
+  0, 100% {
+    transform: translateX(0) translateY(-50%);
+  }
+  50% {
+    transform: translateX(100%) translateY(-50%);
+  }
+  80% {
+    transform: translateX(0) translateY(-50%);
+  }
+
+}
+
+@keyframes eye_line3 {
+  0, 100% {
+    transform: translateX(100%) translateY(-50%);
+  }
+  60% {
+    transform: translateX(80%) translateY(-50%);
+  }
+
+}
+@keyframes eye_line4 {
+  0, 100% {
     transform: translateX(50%) translateY(-50%);
+  }
+  50% {
+    transform: translateX(100%) translateY(-50%);
+  }
+
+}
+
+@keyframes eye_line {
+  0, 100% {
+    transform: translateX(50%) translateY(-50%);
+  }
+  50% {
+    transform: translateX(0) translateY(-50%);
   }
 }
 @keyframes eye_line_back {
   0, 100% {
-    transform: translateX(50%) translateY(-50%);
+    transform: translateX(130%) translateY(-50%);
   }
   50% {
     transform: translateX(0) translateY(-50%);
@@ -637,5 +717,8 @@ footer {
   }
   .page_second .page__text_top {
     top: 34%;
+  }
+  .page_second .page__text_bottom {
+    bottom: 15%;
   }
 }
